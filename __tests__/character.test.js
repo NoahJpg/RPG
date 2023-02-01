@@ -3,15 +3,20 @@ import Character from './../src/js/characters.js';
 describe('Character', () => {
   
     test('should correctly create a character object with type, attribute, and classType keys', () => {
-      const character = new Character("fighter", "strength", "jack");
-      expect(character.type).toEqual("fighter");
+      const character = new Character("jack", "strength", "fighter");
+      expect(character.type).toEqual("jack");
       expect(character.attribute).toEqual("strength");
-      expect(character.classType).toEqual("jack");
+      expect(character.classType).toEqual("fighter");
   });
     test('should correctly determine what the character type is', () => {
-    const character = new Character("fighter", "strength", "jack");
-    character.ArcheType;
+    const character = new Character("jack", "strength", "fighter");
+    character.archeType();
     expect(character.characterType).toEqual("warrior");
+  });
+  test('should correctly determine what the character type is', () => {
+    const character = new Character("jack", "wisdom", "fighter");
+    character.archeType();
+    expect(character.characterType).toEqual("monk");
   });
 });
 
@@ -19,4 +24,4 @@ describe('Character', () => {
   //   expect(character.type).toEqual("glaive");
   //   expect(character.attribute).toEqual("nano");
   //   expect(character.classType).toEqual("jack");
-  // });
+
