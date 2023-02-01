@@ -1,4 +1,4 @@
-import Character from '../src/js/character';
+import Battle from '../src/js/battle.js';
 
 describe('Character', () => {
   let character;
@@ -8,9 +8,9 @@ describe('Character', () => {
   });
 
   test('should correctly test to see character type', () => {
-    expect(character.type).toEqual(1);
-    expect(character.attribute).toEqual(2);
-    expect(character.classType).toEqual(3);
+    expect(character.type).toEqual("glaive");
+    expect(character.attribute).toEqual("nano");
+    expect(character.classType).toEqual("jack");
   });
 
 

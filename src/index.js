@@ -1,7 +1,7 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import Battle from './js/batttle.js';
+import Battle from './js/battle.js';
 import Character from './js/character.js';
 
 function handleTriangleForm(event) {

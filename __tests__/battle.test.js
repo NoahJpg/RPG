@@ -1,9 +1,9 @@
-import Battle from './../src/js/battle.js';
+import Character from './../src/js/character.js';
 
 describe('Battle', () => {
 
   test('should correctly determine if character has attacked or defended', () => {
-    const battle = new Battle(2,4,5);
+    const battle = new Battle();
     expect(battle.attack).toEqual(true);
     expect(battle.defend).toEqual(true);
 
