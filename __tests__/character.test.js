@@ -149,6 +149,12 @@ describe('Character', () => {
     character.setDefense();
     expect(character.defense).toEqual({potion: `${6} protect`});
   });
+  test('should correctly assign defense to the sneaky characterType', () => {
+    const character = new Character("jack", "wisdom", "fighter");
+    character.archeType();
+    character.setDefense();
+    expect(character.defense).toEqual({cower: `${0} protect`});
+  });
 });
 
   // test('should correctly test to see character type', () => {

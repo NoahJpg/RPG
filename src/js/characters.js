@@ -57,8 +57,10 @@ export default class Character {
       this.defense = {shield: `${5} protect`}
     } else if (this.characterType === "paladin" || this.characterType === "wizard") {
       this.defense = {ward: `${3} protect`}
-    } else if (this.characterType === "sneaky") {
+    } else if (this.characterType === "sneaky" || this.characterType === "illusionist") {
       this.attacks = {potion: `${6} protect`}
+    } else if (this.characterType === "monk") {
+      this.attacks = {cower: `${0} protect`}
     }
   }
 
