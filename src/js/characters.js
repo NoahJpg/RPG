@@ -1,6 +1,8 @@
 export default class Character {
   constructor(type, attribute, classType) {
-    
+    this.type = type;
+    this.attribute = attribute;
+    this.classType = classType;
   }
 
 //   getBuildType() {
