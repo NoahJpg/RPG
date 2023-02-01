@@ -26,7 +26,10 @@ export default class Character {
     }
     if ((this.attribute === "dexterity") && (this.classType === "mage")) {
       this.characterType = "illusionist";
-  } 
+    }
+    if ((this.attribute === "dexterity") && (this.classType === "theif")) {
+      this.characterType = "theif";
+    }
   }
 }
 
@@ -39,9 +42,7 @@ export default class Character {
 
 
 
-//  if ((this.attribute === "dexterity") && (this.classType === "theif")) {
-//   this.characterType = "theif";
-// } if ((this.attribute === "strength") && (this.classType === "mage")) {
+//  if ((this.attribute === "strength") && (this.classType === "mage")) {
 //   this.characterType = "paladin";
 // } if ((this.attribute === "strength") && (this.classType === "theif")) {
 //   this.characterType = "duelist";

@@ -38,6 +38,11 @@ describe('Character', () => {
     character.archeType();
     expect(character.characterType).toEqual("illusionist");
   });
+  test('should correctly determine what the character type is', () => {
+    const character = new Character("jack", "dexterity", "theif");
+    character.archeType();
+    expect(character.characterType).toEqual("theif");
+  });
 
 });
 
