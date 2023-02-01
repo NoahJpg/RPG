@@ -95,6 +95,18 @@ describe('Character', () => {
     character.setAttacks();
     expect(character.attacks).toEqual({poison: `${4} damage`});
   });
+  test('should correctly assign attacks to the illusionist characterType', () => {
+    const character = new Character("jack", "dexterity", "mage");
+    character.archeType();
+    character.setAttacks();
+    expect(character.attacks).toEqual({poison: `${4} damage`});
+  });
+  test('should correctly assign attacks to the monk characterType', () => {
+    const character = new Character("jack", "wisdom", "fighter");
+    character.archeType();
+    character.setAttacks();
+    expect(character.attacks).toEqual({meditate: `${10} damage`});
+  });
 });
 
   // test('should correctly test to see character type', () => {

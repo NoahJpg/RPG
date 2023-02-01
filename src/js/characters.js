@@ -43,8 +43,10 @@ export default class Character {
       this.attacks = {slash: `${5} damage`}
     } else if (this.characterType === "paladin" || this.characterType === "wizard") {
       this.attacks = {smite: `${7} damage`}
-    } else if (this.characterType === "sneaky") {
+    } else if (this.characterType === "sneaky" || this.characterType === "illusionist") {
       this.attacks = {poison: `${4} damage`}
+    } else if (this.characterType === "monk") {
+      this.attacks = {meditate: `${10} damage`}
     }
   }
 }
