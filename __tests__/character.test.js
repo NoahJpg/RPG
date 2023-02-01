@@ -53,6 +53,13 @@ describe('Character', () => {
     character.archeType();
     expect(character.characterType).toEqual("duelist");
   });
+  test('should correctly assign attacks based on this.characterType', () => {
+    const character = new Character("jack", "strength", "theif");
+    character.archeType();
+    character.setAttacks();
+    expect(character.attacks).toEqual({attack1: `${5} damage`});
+
+  })
 
 });
 

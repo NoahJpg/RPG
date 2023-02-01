@@ -36,9 +36,14 @@ export default class Character {
       this.characterType = "duelist";
     }
   }
+
+  setAttacks() {
+    /* istanbul ignore else */
+    if (this.characterType === "duelist") {
+      this.attacks = {attack1: `${5} damage`}
+    }
+  }
 }
-
-
 
 //   getBuildType() {
 //     return this.type + this.attriubute + this.classType;
