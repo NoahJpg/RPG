@@ -23,6 +23,11 @@ describe('Character', () => {
     character.archeType();
     expect(character.characterType).toEqual("rogue");
   });
+  test('should correctly determine what the character type is', () => {
+    const character = new Character("jack", "wisdom", "mage");
+    character.archeType();
+    expect(character.characterType).toEqual("wizard");
+  });
 });
 
   // test('should correctly test to see character type', () => {

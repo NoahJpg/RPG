@@ -10,13 +10,16 @@ export default class Character {
   archeType() {
     /* istanbul ignore else */
     if ((this.attribute === "wisdom") && (this.classType === "fighter")) {
-  this.characterType = "monk"; 
+      this.characterType = "monk"; 
     }
     if ((this.attribute === "strength") && (this.classType === "fighter")) {
-    this.characterType = "warrior";
+      this.characterType = "warrior";
     }
     if ((this.attribute === "dexterity") && (this.classType === "fighter")) {
-  this.characterType = "rogue";
+      this.characterType = "rogue";
+    }
+    if ((this.attribute === "wisdom") && (this.classType === "mage")) {
+      this.characterType = "wizard";
     }
   }
 }
@@ -30,13 +33,7 @@ export default class Character {
 
 
 
-// } if ((this.attribute === "strength") && (this.classType === "fighter")) {
-//   this.characterType = "warrior";
-// } if ((this.attribute === "dexterity") && (this.classType === "fighter")) {
-//   this.characterType = "rogue";
-// } if ((this.attribute === "wisdom") && (this.classType === "mage")) {
-//   this.characterType = "wizard";
-// } if ((this.attribute === "wisdom") && (this.classType === "theif")) {
+//  if ((this.attribute === "wisdom") && (this.classType === "theif")) {
 //   this.characterType = "sneaky";
 // } if ((this.attribute === "dexterity") && (this.classType === "mage")) {
 //   this.characterType = "illusionist";
