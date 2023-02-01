@@ -55,8 +55,10 @@ export default class Character {
    /* istanbul ignore else */
     if (this.characterType === "warrior" || this.characterType === "theif" || this.characterType === "duelist" || this.characterType === "rogue") {
       this.defense = {shield: `${5} protect`}
-    } else if (this.characterType === "paladin") {
+    } else if (this.characterType === "paladin" || this.characterType === "wizard") {
       this.defense = {ward: `${3} protect`}
+    } else if (this.characterType === "sneaky") {
+      this.attacks = {potion: `${6} protect`}
     }
   }
 
