@@ -49,10 +49,13 @@ export default class Character {
       this.attacks = {meditate: `${10} damage`}
     }
   }
+
+
+  setDefense() {
+   /* istanbul ignore else */
+    if (this.characterType === "warrior" || this.characterType === "theif") {
+      this.defense = {shield: `${5} protect`}
+    } 
+  }
+
 }
-
-//   getBuildType() {
-//     return this.type + this.attriubute + this.classType;
-//   }
-// }
-

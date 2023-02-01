@@ -107,6 +107,18 @@ describe('Character', () => {
     character.setAttacks();
     expect(character.attacks).toEqual({meditate: `${10} damage`});
   });
+  test('should correctly assign defense to the warrior characterType', () => {
+    const character = new Character("jack", "strength", "fighter");
+    character.archeType();
+    character.setDefense();
+    expect(character.defense).toEqual({shield: `${5} protect`});
+  });
+  test('should correctly assign defense to the theif characterType', () => {
+    const character = new Character("jack", "dexterity", "theif");
+    character.archeType();
+    character.setDefense();
+    expect(character.defense).toEqual({shield: `${5} protect`});
+  });
 });
 
   // test('should correctly test to see character type', () => {
