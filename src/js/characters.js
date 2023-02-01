@@ -39,8 +39,10 @@ export default class Character {
 
   setAttacks() {
     /* istanbul ignore else */
-    if (this.characterType === "duelist") {
-      this.attacks = {attack1: `${5} damage`}
+    if (this.characterType === "duelist" || this.characterType === "theif" || this.characterType === "warrior" || this.characterType === "rogue") {
+      this.attacks = {slash: `${5} damage`}
+    } else if (this.characterType === "paladin") {
+      this.attacks = {smite: `${7} damage`}
     }
   }
 }

@@ -57,10 +57,32 @@ describe('Character', () => {
     const character = new Character("jack", "strength", "theif");
     character.archeType();
     character.setAttacks();
-    expect(character.attacks).toEqual({attack1: `${5} damage`});
-
-  })
-
+    expect(character.attacks).toEqual({slash: `${5} damage`});
+  });
+  test('should correctly assign attacks to the theif characterType', () => {
+    const character = new Character("jack", "dexterity", "theif");
+    character.archeType();
+    character.setAttacks();
+    expect(character.attacks).toEqual({slash: `${5} damage`});
+  });
+  test('should correctly assign attacks to the warrior characterType', () => {
+    const character = new Character("jack", "strength", "fighter");
+    character.archeType();
+    character.setAttacks();
+    expect(character.attacks).toEqual({slash: `${5} damage`});
+  });
+  test('should correctly assign attacks to the rogue characterType', () => {
+    const character = new Character("jack", "dexterity", "fighter");
+    character.archeType();
+    character.setAttacks();
+    expect(character.attacks).toEqual({slash: `${5} damage`});
+  });
+  test('should correctly assign attacks to the paladin characterType', () => {
+    const character = new Character("jack", "strength", "mage");
+    character.archeType();
+    character.setAttacks();
+    expect(character.attacks).toEqual({smite: `${7} damage`});
+  });
 });
 
   // test('should correctly test to see character type', () => {
