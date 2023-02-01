@@ -83,6 +83,18 @@ describe('Character', () => {
     character.setAttacks();
     expect(character.attacks).toEqual({smite: `${7} damage`});
   });
+  test('should correctly assign attacks to the wizard characterType', () => {
+    const character = new Character("jack", "wisdom", "mage");
+    character.archeType();
+    character.setAttacks();
+    expect(character.attacks).toEqual({smite: `${7} damage`});
+  });
+  test('should correctly assign attacks to the sneaky characterType', () => {
+    const character = new Character("jack", "wisdom", "theif");
+    character.archeType();
+    character.setAttacks();
+    expect(character.attacks).toEqual({poison: `${4} damage`});
+  });
 });
 
   // test('should correctly test to see character type', () => {

@@ -41,8 +41,10 @@ export default class Character {
     /* istanbul ignore else */
     if (this.characterType === "duelist" || this.characterType === "theif" || this.characterType === "warrior" || this.characterType === "rogue") {
       this.attacks = {slash: `${5} damage`}
-    } else if (this.characterType === "paladin") {
+    } else if (this.characterType === "paladin" || this.characterType === "wizard") {
       this.attacks = {smite: `${7} damage`}
+    } else if (this.characterType === "sneaky") {
+      this.attacks = {poison: `${4} damage`}
     }
   }
 }
