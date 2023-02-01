@@ -15,6 +15,9 @@ export default class Character {
     if ((this.attribute === "strength") && (this.classType === "fighter")) {
     this.characterType = "warrior";
     }
+    if ((this.attribute === "dexterity") && (this.classType === "fighter")) {
+  this.characterType = "rogue";
+    }
   }
 }
 
