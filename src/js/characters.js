@@ -21,6 +21,9 @@ export default class Character {
     if ((this.attribute === "wisdom") && (this.classType === "mage")) {
       this.characterType = "wizard";
     }
+    if ((this.attribute === "wisdom") && (this.classType === "theif")) {
+      this.characterType = "sneaky";
+  } 
   }
 }
 
@@ -33,9 +36,7 @@ export default class Character {
 
 
 
-//  if ((this.attribute === "wisdom") && (this.classType === "theif")) {
-//   this.characterType = "sneaky";
-// } if ((this.attribute === "dexterity") && (this.classType === "mage")) {
+// if ((this.attribute === "dexterity") && (this.classType === "mage")) {
 //   this.characterType = "illusionist";
 // } if ((this.attribute === "dexterity") && (this.classType === "theif")) {
 //   this.characterType = "theif";
