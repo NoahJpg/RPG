@@ -8,6 +8,11 @@ describe('Character', () => {
       expect(character.attribute).toEqual("strength");
       expect(character.classType).toEqual("jack");
   });
+    test('should correctly determine what the character type is', () => {
+    const character = new Character("fighter", "strength", "jack");
+    character.ArcheType;
+    expect(character.characterType).toEqual("warrior");
+  });
 });
 
   // test('should correctly test to see character type', () => {
