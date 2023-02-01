@@ -53,9 +53,11 @@ export default class Character {
 
   setDefense() {
    /* istanbul ignore else */
-    if (this.characterType === "warrior" || this.characterType === "theif") {
+    if (this.characterType === "warrior" || this.characterType === "theif" || this.characterType === "duelist" || this.characterType === "rogue") {
       this.defense = {shield: `${5} protect`}
-    } 
+    } else if (this.characterType === "paladin") {
+      this.defense = {ward: `${3} protect`}
+    }
   }
 
 }

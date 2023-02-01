@@ -119,6 +119,24 @@ describe('Character', () => {
     character.setDefense();
     expect(character.defense).toEqual({shield: `${5} protect`});
   });
+  test('should correctly assign defense to the duelist characterType', () => {
+    const character = new Character("jack", "strength", "theif");
+    character.archeType();
+    character.setDefense();
+    expect(character.defense).toEqual({shield: `${5} protect`});
+  });
+  test('should correctly assign defense to the rogue characterType', () => {
+    const character = new Character("jack", "dexterity", "fighter");
+    character.archeType();
+    character.setDefense();
+    expect(character.defense).toEqual({shield: `${5} protect`});
+  });
+  test('should correctly assign defense to the paladin characterType', () => {
+    const character = new Character("jack", "strength", "mage");
+    character.archeType();
+    character.setDefense();
+    expect(character.defense).toEqual({ward: `${3} protect`});
+  });
 });
 
   // test('should correctly test to see character type', () => {
