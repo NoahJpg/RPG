@@ -48,6 +48,11 @@ describe('Character', () => {
     character.archeType();
     expect(character.characterType).toEqual("paladin");
   });
+  test('should correctly determine what the character type is', () => {
+    const character = new Character("jack", "strength", "theif");
+    character.archeType();
+    expect(character.characterType).toEqual("duelist");
+  });
 
 });
 

@@ -5,7 +5,6 @@ export default class Character {
     this.classType = classType;
   }
 
-  
 
   archeType() {
     /* istanbul ignore else */
@@ -33,6 +32,9 @@ export default class Character {
     if ((this.attribute === "strength") && (this.classType === "mage")) {
       this.characterType = "paladin";
     } 
+    if ((this.attribute === "strength") && (this.classType === "theif")) {
+      this.characterType = "duelist";
+    }
   }
 }
 
@@ -43,9 +45,3 @@ export default class Character {
 //   }
 // }
 
-
-
-// if ((this.attribute === "strength") && (this.classType === "theif")) {
-//   this.characterType = "duelist";
-// }
-// }
