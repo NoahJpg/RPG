@@ -30,6 +30,9 @@ export default class Character {
     if ((this.attribute === "dexterity") && (this.classType === "theif")) {
       this.characterType = "theif";
     }
+    if ((this.attribute === "strength") && (this.classType === "mage")) {
+      this.characterType = "paladin";
+    } 
   }
 }
 
@@ -42,9 +45,7 @@ export default class Character {
 
 
 
-//  if ((this.attribute === "strength") && (this.classType === "mage")) {
-//   this.characterType = "paladin";
-// } if ((this.attribute === "strength") && (this.classType === "theif")) {
+// if ((this.attribute === "strength") && (this.classType === "theif")) {
 //   this.characterType = "duelist";
 // }
 // }
