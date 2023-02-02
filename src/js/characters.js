@@ -50,7 +50,6 @@ export default class Character {
     }
   }
 
-
   setDefense() {
    /* istanbul ignore else */
     if (this.characterType === "warrior" || this.characterType === "theif" || this.characterType === "duelist" || this.characterType === "rogue") {

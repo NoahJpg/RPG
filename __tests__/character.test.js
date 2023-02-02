@@ -155,6 +155,7 @@ describe('Character', () => {
     character.setDefense();
     expect(character.defense).toEqual({cower: `${0} protect`});
   });
+
 });
 
   // test('should correctly test to see character type', () => {
