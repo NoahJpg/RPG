@@ -5,8 +5,9 @@ export default class PlayerList {
     this.currentId = 0;
   }
 
-  addPlayer() {
-
+  addPlayer(character) {
+    character.id = this.assignId();
+    this.players[character.id] = character;
   }
 
   assignId() {
